@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Aplicacion Siete</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app7.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/13.jpg','imagenes/16.jpg','imagenes/tapete.jpg','imagenes/sema.jpg','imagenes/12.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1 style=" font-size:25px;"><i><center>Festividades del mes de Mayo</center></i></h1>
+      </div>
+      <div data-theme="a">
+         <img src="imagenes/letrero.jpg" width="100%" height="650px">
+      </div>
+      
+     
+      
+      
+          
+<div>
+    <ul id="lista" data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Introducción</h2>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>1 de Mayo</h2>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>4 de mayo</h2>
+         </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+         <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>5 de Mayo</h2>
+         </a>
+    </li> 
+    <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>10 de Mayo</h2>
+         </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>15 de mayo</h2>
+         </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>23 de Mayo</h2>
+         </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Conoce mas... </h2>
+         </a>
+    </li>
+       </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Festividaes del mes de Mayo</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Mes de Mayo</h1>  
+        <div data-role="content" align="center">
+     <div>
+       
+       <p>Mayo es el rey de la Primavera, las temperaturas van en marcado ascenso y los días siguen creciendo Indica el refrán que: "Marzo ventoso y Abril lluvioso, sacan a Mayo florido y hermoso”, haciendo referencia al progresivo avance de la Primavera.
+Las lluvias de este mes son muy valiosas para el campo y las siembras. Florecen muchos arbustos por campos y jardines: amapolas, lilas, rosas … ¡Mayo es también un mes hortelano, con mucha actividad en las huertas: fresas, alcachofas, esparragos…
+Se transplantan las plántulas de los semilleros a los surcos, se efectúan escarda de malas hierbas y se dan los primeros riegos.
+En ocasiones, afortunadamente pocas, puede presentarse una invasión de aire frío polar, con temidas heladas tardías. Los “ santos del hielo" son en fechas del 11 al 14 y resultan muy temidos por los campesinos. Luego se estabiliza el tiempo con mucho sol y agradables temperaturas y se alcanza el "veranillo” de las rosas y del ruiseñor; antes, en las últimas semanas de Abril, habíamos tenido otro “veranillo”: el de las lilas y el cuco.
+Tras una marcada subida térmica, hacia la segunda mitad de mayo suelen presentarse las primeras tronadas. Por Extremadura, Andalucía y Murcia ya es verano hacia esas fechas, para San Fernando las cebadas ya están segando.
+
+
+
+</p>
+<br>
+          <div>
+          <center>
+          <img src="imagenes/mayo4.jpg" width="400px" height="160" >
+          <br>
+          <br>
+          <img src="imagenes/mayo5.jpg" width="400px" height="160" >
+          <br>
+          </center>
+          
+          </div>
+     </div>
+        
+
+     </div>
+      </div>
+    </div>
+    
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Festividaes del mes de Mayo</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Día Internacional de los Trabajadores </h1>  
+        <div data-role="content" align="center">
+     <div>
+       
+       <p>Día Internacional de los Trabajadores o Primero de Mayo es la fiesta por antonomasia del movimiento obrero mundial. Es una jornada que se ha utilizado habitualmente para realizar diferentes reivindicaciones sociales y laborales a favor de las clases trabajadoras por parte, fundamentalmente, de los movimientos socialistas, anarquistas y comunistas, entre otros.
+Desde su establecimiento en la mayoría de países (aunque la consideración de día festivo fue en muchos casos tardía) por acuerdo del Congreso Obrero Socialista de la Segunda Internacional, celebrado enParís en 1889, es una jornada de lucha reivindicativa y de homenaje a los Mártires de Chicago. Estos sindicalistas anarquistas fueron ejecutados en Estados Unidos por participar en las jornadas de lucha por la consecución de la jornada laboral de ocho horas, que tuvieron su origen en la huelga iniciada el 1 de mayo de 1886 y su punto álgido tres días más tarde, el 4 de mayo, en la Revuelta de Haymarket. A partir de entonces se convirtió en una jornada reivindicativa de los derechos de los trabajadores en sentido general que es celebrada en mayor o menor medida en todo el mundo.
+En Estados Unidos, Canadá y otros países no se celebra esta conmemoración. En su lugar se celebra el Labor Day el primer lunes de septiembre en un desfile realizado en Nueva York y organizado por la Noble Orden de los Caballeros del Trabajo (Knights of Labor, en inglés). El presidente estadounidense Grover Cleveland auspició la celebración en septiembre por temor a que la fecha de mayo reforzase el movimientosocialista en los Estados Unidos desde 1882. Canadá se unió a conmemorar el primer lunes de septiembre en vez del primero de mayo a partir de 1894.
+
+
+          </p>
+          <center>
+          <div>
+          <img src="imagenes/trabajo1.jpg" width="45%" height="45%">
+          <br>
+          <img src="imagenes/trabajo2.jpg" width="45%" height="45%">
+          <br>
+          <img src="imagenes/trabajo3.jpg" width="45%" height="45%">
+          <br>
+          <img src="imagenes/trabajo4.jpg" width="45%" height="45%">
+          <br>
+          </div>
+          </center>
+     </div>
+        
+
+     </div>
+      </div>
+    </div>
+    
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+</div>
+</div>
+
+
+	
+
+   <div data-role="page" id="Pagina3" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Festividaes del mes de Mayo</h1>    
+  </div> 
+  <div data-role="main" class="ui-content"  align="center">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Batalla en Atlixco</h1>
+      <div>
+      <p>En el año 1100 el valle de Atlixco se hallaba ocupado por pobladores de origen Teochichimeca, Chichimeca y Xicalancas que bajo el dominio de la gran Tenochtitlan, se asentaron primeramente al poniente del cerro de San Miguel, hoy Solares Grandes.
+Estos primeros pueblos fundaron así Quaquechollan (Águila que huye) y que tiempo después llamaron Acapetlahuacan, "Lugar de división del señorío".
+
+Su posición geográfica hizo que fuera escenario de luchas entre los diversos grupos indígenas que estaban asentados en los alrededores. Los pueblos de Calpan, Huejotzingo y Cholula se disputaron en diversas épocas la posesión del valle, que a la llegada de los españoles se encontraba bajo el dominio de Huejotzingo.
+
+Hacia 1420 se sostuvieron guerras entre los pobladores de Calpan y los Huejotzincas, quienes finalmente vencieron a los primeros obligándolos a emigrar al sur, donde actualmente es Huaquechula.
+El 4 de mayo de 1862 durante la Segunda Intervención Francesa en México, en la hacienda de La Trapera los atlixquenses y elementos del ejército mexicano de la república, al mando de los Generale Antonio Carvajal y Tomas O´Horan se enfrentaron a las tropas al servicio del Segundo Imperio Mexicano comandadas por el Gral. José María Cobos y de Leonardo Márquez  compuesta de soldados conservadores mexicanos en apoyo de envió de refuerzos para llevar a cabo la Batalla de Puebla. Esta batalla culminó con una victoria republicana, debido a esto, el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar al dia siguiente a las tropas francesas del Conde de Lorencez en la batalla de Puebla.
+
+Por lo cual, el gobierno de Juárez consideró que sin el triunfo del 4 de Mayo en Atlixco no hubiera sido posible la victoria de la batalla de Puebla en los Fuertes de Loreto, el 5 de mayo de 1862. Por este motivo, el 20 de noviembre de 1998, el Congreso del Estado de Puebla declaró a Atlixco Heroica Ciudad.
+
+En 19890 debido al acervo cultural, arquitectónico y natural con el que se cuenta, es decretada como ZONA TIPICA MONUMENTAL con la finalidad de preservar este importante patrimonio, evitando así que se siga deteriorando.
+
+
+</p>
+<div>
+<img src="imagenes/atlixco1.jpg" width="45%" height="45%">
+          <br>
+          <img src="imagenes/atlixco2.jpg" width="45%" height="45%">
+          <br>
+          <img src="imagenes/atlixco3.png" width="45%" height="45%">
+          <br>
+</div>
+     
+      </div>
+    </div>
+    </div>
+    <div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+     </div>
+</div>
+ 
+
+ 
+
+ 
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Festividaes del mes de Mayo</h1>
+  </div>
+  
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Batalla de Puebla</h1>
+   <div data-role="content" align="center">
+      <div>
+      <p>
+    La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio Francés, dirigido por Charles Ferdinand Latrille, conde de Lorencez, durante la Segunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época. Pese a su éxito, la batalla no impidió la invasión del país, sólo la retrasó, sin embargo, sería la primera batalla de una guerra que finalmente México ganaría. Los franceses regresarían al siguiente año, con lo que se libró una segunda batalla en Puebla en la que se enfrentaron 35 000 franceses contra 29 000 mexicanos (defensa que duró 62 días), y lograrían avanzar hasta la Ciudad de México, lo que permitió establecer el Segundo Imperio Mexicano.
+</p>
+      <p>
+      <br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/puebla1.jpg',1)"><img src="imagenes/letrero.jpg" width="650" height="482" id="Image17"></a>
+      <br>
+       <br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/puebla2.jpg',1)"><img src="imagenes/letrero.jpg" width="650" height="482" id="Image19"></a>
+      <br>
+      <br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/puebla3.jpg',1)"><img src="imagenes/letrero.jpg" width="650" height="482" id="Image20"></a>
+      <br>
+      <br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/puebla4.jpg',1)"><img src="imagenes/letrero.jpg" width="650" height="482" id="Image21"></a>
+      <br>
+      <br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/puebla5.jpg',1)"><img src="imagenes/letrero.jpg" width="650" height="482" id="Image18"></a></p>
+     
+     </div>
+     </div>
+   </div>
+ </div>
+ <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Mas Información</h1>
+      <div>
+      <p>  
+      Finalmente, ante la incapacidad de consolidar un imperio y después de perder 11 000 hombres debido a la actividad guerrillera que nunca dejó de subsistir,1 los franceses se retiraron incondicionalmente del país en el año de1867.
+En octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México para reclamar sus derechos como acreedores por una deuda que ascendía a alrededor de 80 millones de pesos, aproximadamente eran 69 millones para los ingleses, 9 millones para los españoles y 2 millones para Francia.
+      </p>
+      <center>
+<div>
+<img src="imagenes/puebla6.jpg" width="45%" height="45%">
+</div>
+</center>
+      <br>
+      </div>
+    </div>
+    </div>
+    
+ <div>
+ <div data-role="collapsible" data-role-theme="false" >
+   
+    </div>
+  <<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+   </div>
+</div> 
+ 
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Festividaes del mes de Mayo</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <h2>Dia de las Madres</h2>
+       <p>La celebración del Día de las Madres tiene sus antecedentes en la Grecia antigua en honor de Rhea , conocida como 'la madre de los dioses'. Durante el siglo XIX hubo algunas propuestas para dedicar un día a homenajear a las madres, pero no fue sino hasta 1907 cuando Ana Jarvis, nacida en Filadelfia, Estados Unidos, se reunió con un grupo de amigos y les planteó el reto de trabajar para que se estableciera una fecha para esta celebración.
+A partir de ese momento comenzó una campaña para hacer que las autoridades accedieran a tal petición. Pronto se unieron amigos, vecinos y conocidos, quienes a través de folletos y textos en periódicos locales propagaron la idea en su comunidad. En 1908 se celebró la primera ceremonia no oficial para conmemorar a las madres en una iglesia metodista de Grafton, Virginia.El evento tuvo lugar el 10 de mayo del citado año y acudieron 407 mamás acompañadas de sus familias.En la ceremonia, Ana Jarvis regaló a cada madre presente un clavel, la flor favorita de su propia madre, quien había fallecido pocos años antes; desde entonces el clavel es representativo de este día.
+El 10 de mayo de 1913 se emitió la resolución. Fue el presidente Woodrow Wilson quien, el 8 de mayo de 1914, decretó que el Día de las Madres se celebraría en Estados Unidos el segundo domingo de cada mayo. La idea pasó a Europa y casi 40 países en todo el mundo iniciaron las celebraciones. En algunos casos se designó un día específico para llevarla a cabo, como en México, donde el 10 de mayo está dedicado a este festejo.
+
+          </p>
+          <div>
+          <img src="imagenes/mayo1.jpg" width="400px" height="200" >
+          <br>
+          <br>
+          <br>
+          <img src="imagenes/mayo2.jpg" width="400px" height="200" >
+          <br>
+          <br>
+          <img src="imagenes/mayo3.jpg" width="400px" height="200" >
+          <br>
+          </div>
+
+     </div>
+     </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Festividaes del mes de Mayo</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <h2>DÍA DEL MAESTRO</h2>
+       <p>En 1918, se llevó a cabo en México la primera conmemoración del Día el Maestro, el decreto fue firmado por el presidente Venustiano Carranza.
+La propuesta pretendía que se instituyera un día en homenaje a los maestros y que fuera el 15 de mayo, fecha conmemorativa de la toma de Querétaro.
+La iniciativa fue aprobada en 1917, y un año después se celebro por primera vez está fecha.
+Esta celebración varia de día según las naciones , pero el Día Mundial del Maestro, instituido por la UNESCO, se celebra el 5 de octubre.
+La Conferencia Interamericana de Educación (celebrada en Panamá en 1943) recomendó celebrar el Día Panamericano del Maestro el 11 de septiembre (fallecimiento del educador y presidente argentino Domingo Faustino Sarmiento).
+CURIOSIDADES EN EL DÍA DEL MAESTRO
+Lo estados con más profesores son el Estado de México y el Distrito Federal. Las entidades con menos maestros son Baja California Sur, Colima y Campeche.
+Un 80% de los maestros, hombres, tienen escolaridad superior y un 72% en el caso de las maestras.
+En México hay un 1 millón 800 mil maestros, de los cuales un 61.3% son mujeres.
+En México hay 27 millones de estudiantes.
+¿POR QUÉ SE CELEBRA EL 15 DE MAYO?
+Además de conmemorar la toma de Querétaro, para contestar esta pregunta debemos ubicar a un personaje central en la historia de la educación religiosa: San Juan Bautista de La Salle, quien fue un sacerdote y pedagogo francés innovador , que consagró su vida a formar maestros destinados a la educación de hijos de artesanos y de niños pobres de la época.
+Así, la celebración a los maestros también se conmemora el 15 de mayo porque ese día, pero de 1950, fue declarado patrono especial de todos los educadores de la infancia y de la juventud y Patrono universal de los educadores por el papa Pío XII (1876-1958).
+JOSÉ VASCONCELOS, UN MAESTRO EJEMPLAR
+Uno de los educadores más destacados de México es el oaxaqueño José Vasconcelos, nombrado Doctor Honoris Causa por la Universidad Nacional Autónoma de México (UNAM) y por las de Chile, Guatemala y otras naciones latinoamericanas.
+Fue también miembro de El Colegio Nacional y de la Academia Mexicana de la Lengua. Fue llamado el Maestro de América y cada 15 de mayo se entrega el reconocimiento que lleva su nombre, a los educadores destacados del país.
+
+
+
+
+          </p>
+          <div>
+          <img src="imagenes/maestro1.jpg" width="400px" height="250" >
+          <br>
+          <br>
+          <img src="imagenes/maestro2.jpg" width="400px" height="250" >
+          <br>
+          <br>
+          <img src="imagenes/maestro3.jpg" width="400px" height="250" >
+          <br>
+          
+
+          </div>
+
+     </div>
+     </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Festividaes del mes de Mayo</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <h2>Día del Estudiante en México </h2>
+       <p>El origen de celebrar el Día del Estudiante en México surgió en 1929, cuando estudiantes de la Universidad Nacional Autónoma de México se lanzaron en huelga en huelga de la autonomía universitaria. 
+Después de una serie de eventos y protestas que culminaron en una huelga general, los alumnos fueron agredidos brutalmente por la policía dentro de las instalaciones de la Escuela de Derecho el día 23 de mayo por tal motivo los alumnos de esta escuela reclamaron que ese día fuera recordado como el Día del Estudiante en honor a los agredidos y que la plaza de Santo Domingo en la Ciudad de México fuera llamada Plaza 23 de mayo o del Estudiante. 
+Un mes después se consiguió la autonomía de esta casa de estudios y con el tiempo en muchos de los estados del país se crearon o se tomaron espacios propicios para la relajación y el estudio y se les denominaron “Jardines del Estudiante”, en honor a esa lucha en pos de la Autonomía Universitaria. 
+La mayoría de los estudiantes que festejan este memorable día ignoran su origen y lo toman como pretexto para ausentarse de las labores académicas. 
+El Día del Estudiante se celebra en varios países pero en fechas diferentes, por ejemplo: Argentina lo celebra el 21 de septiembre, Chile el 11 de mayo, Colombia los días 8 y 9 junio, España el 28 de enero, etc.
+ 
+
+          </p>
+          <div>
+          <img src="imagenes/estudio1.jpg" width="300px" height="200" >
+          <br>
+          <br>
+          <img src="imagenes/estudio2.jpg" width="300px" height="180" >
+          <br>
+          <br>
+          <img src="imagenes/estudio3.jpg" width="300px" height="200" >
+          <br>
+
+          </div>
+
+     </div>
+     </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Festividaes del mes de Mayo</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <h2>Fechas Importantes en General</h2>
+       <p>
+       El 10 de mayo se celebra en El Salvador, Guatemala y México el Día de las Madres.
+El 11 de mayo en Chile se celebra el Día del Estudiante.
+El 12 de mayo en España, Cuba, Colombia y Venezuela se celebra el Día Internacional de la Enfermería.
+El 14 y 15 de mayo se celebra la Independencia del Paraguay.
+El 15 de mayo se celebra el Día Internacional de la Familia, según la ONU.
+El 15 de mayo se celebra en México y en Colombia el Día del Maestro.
+El 17 de mayo se celebra el Día Mundial de las Telecomunicaciones y la Sociedad de la Información, establecido por la UIT.
+El 17 de mayo se celebra el Día internacional contra la homofobia y la transfobia, por ser ésta la fecha en que, en 1990, la OMS retiró la homosexualidad de su lista de enfermedades mentales.
+El 17 de mayo se celebra el Día das letras galegas.
+El 21 de mayo se celebra el Día Mundial de la Diversidad Cultural para el Diálogo y el Desarrollo, según la ONU.
+El 22 de mayo se celebra el Día Internacional de la Diversidad Biológica, según la ONU.
+El 24 de mayo de 1822 se realiza la batalla de Pichincha en Quito, y se proclama la independencia de Ecuador.
+Del 25 al 31 de mayo se celebra la Semana de Solidaridad con los pueblos de los territorios no autónomos, según la ONU.
+El 25 de mayo se celebra el Día de África, según la ONU.
+El 25 de mayo se celebra en Argentina el aniversario de la Revolución de Mayo que fundó el país y se creó el primer gobierno patrio.
+El 29 de mayo se celebra el Día Internacional del Personal de Paz de las Naciones Unidas, según la ONU.
+El 31 de mayo se celebra el Día Mundial Sin Tabaco, según la ONU.
+
+       </p>
+       <center>
+       <img src="imagenes/mayo6.jpg" width="400px" height="300" >
+       </center>
+     </div>
+     </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+       <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>App7</h4>
+      <h4>Elizabeth Romero Picazo</h4>
+   </div>
+</div>
+</div>
+</div>
+</body>
+</html>
